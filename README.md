@@ -23,3 +23,18 @@ codeboost ci demo
 │       └── container.yml
 └── main.py
 ```
+
+# Running
+
+1. Build docker image
+```shell
+# Use sudo if on linux / If not using rootless docker
+docker build -t my-app .
+```
+
+2. Run a docker container
+```shell
+docker run -p 5000:5000 my-app
+```
+
+3. Visit http://localhost:5000
